@@ -16,12 +16,12 @@ public class HomeController {
     }
 
     @PostMapping("/uploadComment")
-    public void uploadCommnet(@RequestBody PhotoComment comment) {
+    public void uploadComment(@RequestBody PhotoComment comment) {
         photoCommentService.storeComment(comment);
     }
 
     @GetMapping("/comment/{id}")
-    public PhotoComment getCommnet(@PathVariable Long id) {
+    public PhotoComment getComment(@PathVariable Long id) {
         return photoCommentService.getComment(id);
     }
 
