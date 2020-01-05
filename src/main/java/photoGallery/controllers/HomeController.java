@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.*;
 import photoGallery.model.photoComment.PhotoComment;
 import photoGallery.model.photoComment.PhotoCommentService;
 
+import java.util.List;
+
 @Controller
 @RestController
 public class HomeController {
@@ -33,5 +35,10 @@ public class HomeController {
     @PutMapping("comment/update")
     public void updateComment(@RequestBody PhotoComment comment) {
         photoCommentService.update(comment);
+    }
+
+    @GetMapping("comment/all/{id}")
+    public List<PhotoComment> updateComment(@PathVariable Long id) {
+        return photoCommentService.getComments(id);
     }
 }

@@ -25,6 +25,7 @@ public class PhotoFile {
     @Lob
     private byte[] data;
 
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "photo", orphanRemoval = true)
     private List<PhotoComment> comments = new ArrayList<>();
 
@@ -77,5 +78,13 @@ public class PhotoFile {
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+
+    public List<PhotoComment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<PhotoComment> comments) {
+        this.comments = comments;
     }
 }

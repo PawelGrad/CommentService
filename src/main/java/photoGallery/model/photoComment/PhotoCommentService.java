@@ -7,6 +7,7 @@ import photoGallery.model.PhotoFile.PhotoFile;
 
 import javax.transaction.Transactional;
 import java.io.IOException;
+import java.util.List;
 
 @Service
 @Transactional
@@ -35,4 +36,6 @@ public class PhotoCommentService {
     public void update(PhotoComment comment){
         photoCommentRepository.save(comment);
     }
+
+    public List<PhotoComment>getComments(Long id) { return photoCommentRepository.getAllByPhotoId(id);}
 }
