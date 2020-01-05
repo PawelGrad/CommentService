@@ -56,4 +56,6 @@ public class PhotoComment {
     public void setPhoto(PhotoFile photo) {
         this.photo = photo;
     }
+
+
 }
