@@ -3,6 +3,7 @@ package photoGallery.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import photoGallery.model.photoComment.PhotoComment;
+import photoGallery.model.photoComment.PhotoCommentDTO;
 import photoGallery.model.photoComment.PhotoCommentService;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class HomeController {
     }
 
     @PostMapping("/uploadComment")
-    public void uploadComment(@RequestBody PhotoComment comment) {
+    public void uploadComment(@RequestBody PhotoCommentDTO comment) {
         photoCommentService.storeComment(comment);
     }
 
