@@ -1,7 +1,7 @@
 package photoGallery.model.photoComment;
 
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
+import photoGallery.exceptions.CommentNotFoundException;
 import photoGallery.microservices.FeignClientPhotoService;
 
 import javax.transaction.Transactional;
@@ -23,8 +23,7 @@ public class PhotoCommentService {
             photoCommentRepository.save(convertToEntity(commentDTO));
     }
     public PhotoComment getComment(Long commentId) {
-        //return PhotoFileRepository.findById(fileId).orElseThrow(() -> new MyFileNotFoundException("File not found with id " + fileId));
-        return photoCommentRepository.findById(commentId).orElse(null);
+        return photoCommentRepository.findById(commentId).orElseThrow(() -> new CommentNotFoundException("File not found"));
     }
 
     public void deleteComment(Long id) {

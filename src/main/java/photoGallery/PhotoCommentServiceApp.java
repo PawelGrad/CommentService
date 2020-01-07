@@ -6,10 +6,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients
 @SpringBootApplication
-public class PhotoApp {
+public class PhotoCommentServiceApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(PhotoApp.class, args);
+        SpringApplication.run(PhotoCommentServiceApp.class, args);
     }
 
 }

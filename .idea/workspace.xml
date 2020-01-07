@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/exceptions/CommentNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/PhotoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/microservices/FeignClientPhotoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoCommentServiceApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/microservices/PhotoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +87,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="photoGallery.exceptions" />
       <recent name="photoGallery.model.PhotoFile" />
       <recent name="photoGallery.model.photoComment" />
     </key>
@@ -113,21 +107,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PhotoApp (1)">
-    <configuration name="PhotoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="photoGallery" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="photoGallery.microservices.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PhotoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.PhotoCommentServiceApp">
+    <configuration name="PhotoCommentServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="PhotoCommentService" />
       <extension name="coverage">
         <pattern>
@@ -135,15 +116,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoCommentServiceApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoCommentServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="PhotoCommentService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.microservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="photoGallery.PhotoCommentServiceApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PhotoApp (1)" />
-        <item itemvalue="Spring Boot.PhotoApp" />
+        <item itemvalue="Spring Boot.PhotoCommentServiceApp" />
+        <item itemvalue="Spring Boot.PhotoCommentServiceApp" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989941969" duration="17025000" />
+      <workItem from="1577989941969" duration="18129000" />
     </task>
     <servers />
   </component>
