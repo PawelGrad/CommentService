@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/exceptions/CommentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/photoGallery/model/photoComment/PhotoCommentServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/PhotoCommentServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/PhotoApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +67,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -80,18 +85,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/photoGallery" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="photoGallery.model.photoComment" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="photoGallery.exceptions" />
       <recent name="photoGallery.model.PhotoFile" />
       <recent name="photoGallery.model.photoComment" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pawcik\IdeaProjects\PhotoCommentService\src" />
       <recent name="C:\Users\Pawcik\IdeaProjects\PhotoCommentService\src\main\java\photoGallery" />
     </key>
   </component>
@@ -108,6 +123,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.PhotoCommentServiceApp">
+    <configuration name="PhotoCommentServiceTest.convertToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotoCommentService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="photoGallery.model.photoComment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="photoGallery.model.photoComment" />
+      <option name="MAIN_CLASS_NAME" value="photoGallery.model.photoComment.PhotoCommentServiceTest" />
+      <option name="METHOD_NAME" value="convertToEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhotoCommentServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="PhotoCommentService" />
       <extension name="coverage">
@@ -137,6 +168,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PhotoCommentServiceApp" />
+        <item itemvalue="JUnit.PhotoCommentServiceTest.convertToEntity" />
         <item itemvalue="Spring Boot.PhotoCommentServiceApp" />
       </list>
     </recent_temporary>
@@ -172,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989941969" duration="18129000" />
+      <workItem from="1577989941969" duration="23288000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ package photoGallery.model.photoComment;
 import org.springframework.stereotype.Service;
 import photoGallery.exceptions.CommentNotFoundException;
 import photoGallery.microservices.FeignClientPhotoService;
+import photoGallery.model.PhotoFile.PhotoConverter;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -12,11 +13,11 @@ import java.util.List;
 public class PhotoCommentService {
 
     private PhotoCommentRepository photoCommentRepository;
-    private FeignClientPhotoService feignClientPhotoService;
+    private PhotoConverter photoConverter;
 
-    public PhotoCommentService(PhotoCommentRepository photoCommentRepository, FeignClientPhotoService feignClientPhotoService) {
+    public PhotoCommentService(PhotoCommentRepository photoCommentRepository, PhotoConverter photoConverter) {
         this.photoCommentRepository = photoCommentRepository;
-        this.feignClientPhotoService = feignClientPhotoService;
+        this.photoConverter = photoConverter;
     }
 
     public void storeComment(PhotoCommentDTO commentDTO){
@@ -38,7 +39,7 @@ public class PhotoCommentService {
 
     public PhotoCommentDTO convertToDto(PhotoComment comment){
         PhotoCommentDTO photoCommentDTO = new PhotoCommentDTO();
-        photoCommentDTO.setPhoto(feignClientPhotoService.getPhotoDTO(comment.getPhoto().getId()));
+        photoCommentDTO.setPhoto(photoConverter.convertToDTO(comment.getPhoto()));
         photoCommentDTO.setCommentText(comment.getCommentText());
         photoCommentDTO.setCommentAuthor(comment.getCommentAuthor());
         photoCommentDTO.setId(comment.getId());
@@ -47,7 +48,7 @@ public class PhotoCommentService {
 
     public PhotoComment convertToEntity(PhotoCommentDTO comment){
         PhotoComment photoComment = new PhotoComment();
-        photoComment.setPhoto(feignClientPhotoService.getPhotoEntity(comment.getPhoto().getId()));
+        photoComment.setPhoto(photoConverter.convertToEntity(comment.getPhoto()));
         photoComment.setCommentText(comment.getCommentText());
         photoComment.setCommentAuthor(comment.getCommentAuthor());
         photoComment.setId(comment.getId());

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import photoGallery.model.PhotoFile.PhotoFile;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "comments")
@@ -57,5 +58,19 @@ public class PhotoComment {
         this.photo = photo;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PhotoComment that = (PhotoComment) o;
+        return id.equals(that.id) &&
+                commentText.equals(that.commentText) &&
+                commentAuthor.equals(that.commentAuthor) &&
+                photo.equals(that.photo);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, commentText, commentAuthor, photo);
+    }
 }

@@ -4,7 +4,9 @@ import photoGallery.model.photoComment.PhotoComment;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "photos")
@@ -86,5 +88,26 @@ public class PhotoFile {
 
     public void setComments(List<PhotoComment> comments) {
         this.comments = comments;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PhotoFile photoFile = (PhotoFile) o;
+        return id.equals(photoFile.id) &&
+                fileName.equals(photoFile.fileName) &&
+                fileType.equals(photoFile.fileType) &&
+                voteCounter.equals(photoFile.voteCounter) &&
+                rating.equals(photoFile.rating) &&
+                Arrays.equals(data, photoFile.data) &&
+                comments.equals(photoFile.comments);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(id, fileName, fileType, voteCounter, rating, comments);
+        result = 31 * result + Arrays.hashCode(data);
+        return result;
     }
 }
