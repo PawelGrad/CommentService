@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="104c8fc1-594e-42ca-8048-3a2c1f8c9b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/photoGallery/model/photoComment/PhotoCommentServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/PhotoFile/PhotoFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/photoGallery/model/photoComment/PhotoCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/PhotoFile/PhotoFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoComment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/photoGallery/model/photoComment/PhotoCommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577972243680</updated>
       <workItem from="1577972247274" duration="757000" />
-      <workItem from="1577989941969" duration="23288000" />
+      <workItem from="1577989941969" duration="24365000" />
     </task>
     <servers />
   </component>
